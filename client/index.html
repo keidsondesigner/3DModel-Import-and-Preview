@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome 3D Importer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Awesome 3D Importer</h1>
+            <p class="subtitle">Import and customize GLB models</p>
+        </header>
+
+        <div class="section">
+            <h2>Select 3D Model</h2>
+            <input type="file" id="fileInput" accept=".glb,.gltf" class="file-input">
+            <button id="browseBtn" class="btn btn-secondary">Browse GLB File</button>
+            <p id="fileName" class="file-name">No file selected</p>
+        </div>
+
+        <div class="section">
+            <h2>Model Preview</h2>
+            <div id="preview" class="preview-container">
+                <p class="preview-placeholder">Load a GLB file to preview</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Customize Color</h2>
+            <div class="color-picker-wrapper">
+                <label for="colorPicker">Model Color:</label>
+                <input type="color" id="colorPicker" value="#ffffff" class="color-input">
+                <span id="colorValue">#ffffff</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <button id="importBtn" class="btn btn-primary" disabled>Import to After Effects</button>
+            <p id="status" class="status-message"></p>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GLTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- CSInterface Library -->
+    <script src="lib/CSInterface.js"></script>
+    <!-- Main Application Script -->
+    <script src="main.js"></script>
+</body>
+</html>
