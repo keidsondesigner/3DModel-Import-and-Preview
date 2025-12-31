@@ -1,4 +1,4 @@
-# Awesome 3D Importer
+# 3D Model Import and Preview
 
 A powerful Adobe After Effects CEP extension that allows users to import GLB/GLTF 3D models, customize their colors in real-time, and seamlessly add them to After Effects compositions.
 
